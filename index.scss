@@ -1,0 +1,51 @@
+* {
+    font-family: 'Staatliches', cursive;
+ }
+@mixin inputs {
+    outline: none;
+    display: block;
+    width: 50%;
+    padding: 3px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+}
+#main-form {
+    background-color: #5a5a5a;
+    width: 500px;
+    border-radius: 10px;
+    height: 320px;
+    h2 {
+      text-align: center;
+      padding-top: 10px;
+      color: #a5a5a5;
+      .icon {
+        color: cyan;
+      }
+    }
+    button {
+      transform: translateX(210px);
+      border-radius: 4px;
+      margin-top: 10px;
+      padding: 0 20px 0 20px;
+      font-size: 20px;
+      background-color: #a5a5a5;
+      border: none;
+      color: #5a5a5a;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .wrapper {
+      padding-left: 85px;
+      padding-top: 10px;
+      background-color: #a5a5a5;
+      color: #5a5a5a;
+      width: 415px;
+      input {
+        @include inputs;
+      }
+    }
+}
+  
+  
